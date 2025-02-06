@@ -7,6 +7,8 @@ services:
        POSTGRES_PASSWORD: sunny
        POSTGRES_USER: admin
        POSTGRES_DB: myhost
+       to give a name of the container inside of /root 
+       container_name: of the image_name are any thing
   myadminer:
     image: adminer
     ports: 
