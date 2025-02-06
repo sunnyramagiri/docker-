@@ -1,0 +1,16 @@
+---
+version: '3.8'
+services:
+  mydb:
+    image: postgres
+    environment:
+       POSTGRES_PASSWORD: sunny
+       POSTGRES_USER: admin
+       POSTGRES_DB: myhost
+  myadminer:
+    image: adminer
+    ports: 
+      - 8908:8080
+    links:
+      - mydb:postgres
+...
